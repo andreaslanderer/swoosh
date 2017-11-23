@@ -48,6 +48,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wv0-Dc-UwC" kind="show" id="Bf4-gK-TbJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-7D-r4W">
                                 <rect key="frame" x="67.666666666666686" y="134" width="240" height="50"/>
@@ -172,6 +175,18 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="l3k-Oi-QWn" kind="show" id="0Av-VG-p56"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu9-jB-Gx8">
+                                <rect key="frame" x="20" y="60" width="29" height="24"/>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6c5-jS-Yya" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="Nqm-0R-H4d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,8 +194,10 @@
                             <constraint firstItem="NaI-ik-bxa" firstAttribute="top" secondItem="mxr-FN-VeN" secondAttribute="top" constant="20" id="1Yb-fP-fEp"/>
                             <constraint firstItem="jKn-wr-EIK" firstAttribute="bottom" secondItem="mxr-FN-VeN" secondAttribute="bottom" id="5iu-sE-Nju"/>
                             <constraint firstItem="jKn-wr-EIK" firstAttribute="trailing" secondItem="mxr-FN-VeN" secondAttribute="trailing" id="Pdv-iI-plq"/>
+                            <constraint firstItem="wu9-jB-Gx8" firstAttribute="top" secondItem="hUf-q6-D6q" secondAttribute="top" constant="60" id="TBc-Cd-1E1"/>
                             <constraint firstItem="NaI-ik-bxa" firstAttribute="leading" secondItem="mxr-FN-VeN" secondAttribute="leading" id="W4B-Na-f5u"/>
                             <constraint firstItem="NaI-ik-bxa" firstAttribute="centerX" secondItem="hUf-q6-D6q" secondAttribute="centerX" id="aOw-Ho-Kjx"/>
+                            <constraint firstItem="wu9-jB-Gx8" firstAttribute="leading" secondItem="mxr-FN-VeN" secondAttribute="leading" constant="20" id="cC1-AF-i96"/>
                             <constraint firstItem="jKn-wr-EIK" firstAttribute="top" secondItem="hUf-q6-D6q" secondAttribute="top" id="dsR-el-5Tq"/>
                             <constraint firstItem="LSI-Ew-uMA" firstAttribute="centerX" secondItem="hUf-q6-D6q" secondAttribute="centerX" id="eSH-Gg-W2y"/>
                             <constraint firstItem="jKn-wr-EIK" firstAttribute="leading" secondItem="mxr-FN-VeN" secondAttribute="leading" id="iVs-x7-ioI"/>
@@ -193,8 +210,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ZD-O4-aZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6c5-jS-Yya" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="988" y="128.18590704647679"/>
+            <point key="canvasLocation" x="988" y="127.83251231527095"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1jw-ud-VuP">
@@ -287,6 +305,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
