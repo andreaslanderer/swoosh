@@ -27,4 +27,10 @@ class LeagueViewController: UIViewController {
         self.playerModel.desiredLeague = sender.titleLabel?.text
         self.nextButton.isEnabled = true
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillViewController = segue.destination as? SkillViewController {
+            skillViewController.playerModel = self.playerModel
+        }
+    }
 }
